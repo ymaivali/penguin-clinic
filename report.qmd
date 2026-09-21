@@ -31,6 +31,13 @@ analyse while we learn git.
 knitr::kable(describe_visits(d))
 ```
 
+Split by sex as well, since the arms were balanced by design but sex was not:
+
+```{r}
+#| label: describe-by-sex
+knitr::kable(describe_by_sex(d))
+```
+
 ## Model
 
 <!-- student C writes here -->

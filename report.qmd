@@ -52,4 +52,7 @@ knitr::kable(model_table(fit))
 
 <!-- EVERYONE edits this section. This is where merge conflicts happen. -->
 
-TODO: one paragraph, written together.
+Treatment was associated with a lower score than control (adjusted
+difference -5.23, 95% CI -7.53 to -2.94). We stress that these data are
+simulated, so this is a demonstration of the estimator and not evidence
+about any real intervention.

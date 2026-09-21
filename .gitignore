@@ -1,0 +1,34 @@
+# --- RStudio / R session junk -------------------------------------------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user
+
+# --- secrets: never commit these ---------------------------------------
+.Renviron
+.env
+*_secret*
+*token*
+
+# --- rendered output ----------------------------------------------------
+# We commit the .qmd source, not the rendered result. Whoever needs the
+# HTML can render it themselves.
+report.html
+report_files/
+/_site/
+/.quarto/
+
+# --- big or private data ------------------------------------------------
+# data/clinic_visits.csv is deliberately NOT ignored: it is 4 KB, synthetic
+# and public. Real or large data would be ignored instead, e.g.:
+# data/*.rds
+# data/raw_patient_export.csv
+
+# --- OS noise -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- Claude Code local state -------------------------------------------
+.claude/settings.local.json
+.claude/.cc-writes/

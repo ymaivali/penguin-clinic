@@ -1,0 +1,48 @@
+---
+title: "Clinic visit scores: group report"
+author: "Group N"
+format: html
+---
+
+```{r}
+#| label: setup
+#| message: false
+source("R/01-clean.R")
+source("R/02-describe.R")
+source("R/03-model.R")
+
+d <- load_visits()
+```
+
+## Data
+
+The data are **simulated** (see `data-raw/00-simulate-data.R`). Nothing here is
+an empirical finding; the file exists so that this project has something to
+analyse while we learn git.
+
+`r nrow(d)` simulated participants, `r nlevels(d$arm)` arms.
+
+## Descriptives
+
+<!-- student B writes here -->
+
+```{r}
+#| label: describe
+knitr::kable(describe_visits(d))
+```
+
+## Model
+
+<!-- student C writes here -->
+
+```{r}
+#| label: model
+fit <- model_visits(d)
+knitr::kable(model_table(fit))
+```
+
+## Interpretation
+
+<!-- EVERYONE edits this section. This is where merge conflicts happen. -->
+
+TODO: one paragraph, written together.

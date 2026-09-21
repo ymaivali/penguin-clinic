@@ -52,4 +52,7 @@ knitr::kable(model_table(fit))
 
 <!-- EVERYONE edits this section. This is where merge conflicts happen. -->
 
-TODO: one paragraph, written together.
+In this simulated dataset the treatment arm scored about 5 points lower
+than control after adjustment for age and sex. Because the data were
+generated with a known arm effect of -4, the estimate is close to the
+truth but not identical - ordinary sampling variation.

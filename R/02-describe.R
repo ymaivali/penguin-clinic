@@ -13,3 +13,19 @@ describe_visits <- function(d) {
     row.names  = NULL
   )
 }
+
+# Same summary, split by sex as well as arm. Used in the Descriptives
+# section of report.qmd.
+describe_by_sex <- function(d) {
+  out <- aggregate(score ~ arm + sex, data = d, FUN = function(x) {
+    c(n = length(x), mean = mean(x), sd = sd(x))
+  })
+
+  data.frame(
+    arm        = out$arm,
+    sex        = out$sex,
+    n          = as.integer(out$score[, "n"]),
+    mean_score = round(out$score[, "mean"], 2),
+    sd_score   = round(out$score[, "sd"], 2)
+  )
+}

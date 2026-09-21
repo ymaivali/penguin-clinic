@@ -53,6 +53,10 @@ knitr::kable(model_table(fit))
 <!-- EVERYONE edits this section. This is where merge conflicts happen. -->
 
 Treatment was associated with a lower score than control (adjusted
-difference -5.23, 95% CI -7.53 to -2.94). We stress that these data are
-simulated, so this is a demonstration of the estimator and not evidence
-about any real intervention.
+difference -5.23 points, 95% CI -7.53 to -2.94). These data were simulated
+with a known arm effect of -4, so the estimate is close to the truth but not
+identical: the interval covers -4, and the gap between -5.23 and -4 is
+ordinary sampling variation rather than bias.
+
+This is a demonstration of the estimator on synthetic data. It is not
+evidence about any real intervention.

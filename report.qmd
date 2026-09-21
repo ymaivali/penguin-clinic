@@ -58,5 +58,5 @@ with a known arm effect of -4, so the estimate is close to the truth but not
 identical: the interval covers -4, and the gap between -5.23 and -4 is
 ordinary sampling variation rather than bias.
 
-This is a demonstration of the estimator on synthetic data. It is not
-evidence about any real intervention.
+These data are synthetic. Nothing above is evidence about any real
+intervention, and the numbers should not be quoted outside this course.

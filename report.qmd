@@ -60,3 +60,7 @@ ordinary sampling variation rather than bias.
 
 This is a demonstration of the estimator on synthetic data. It is not
 evidence about any real intervention.
+
+A further limitation: the simulation assumes the arm effect is constant
+across ages, so the model is correctly specified by construction. Real
+data would not be so obliging.
